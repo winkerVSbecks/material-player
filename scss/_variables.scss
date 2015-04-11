@@ -6,6 +6,7 @@ $white                       : #fbfcfa;
 $pink                        : #f31f69;
 $grey                        : #808280;
 
+$header-height               : 80px;
 $album-width                 : 80%;
 $player-height               : 64px;
 
@@ -15,6 +16,7 @@ $z-index-album               : 998;
 $z-index-svg                 : 999;
 $z-index-album-clone         : 1000;
 $z-index-player              : 1001;
+$z-app-header                : 1001;
 
 $body-font                   : 'Roboto', sans-serif;
 $header-font                 : 'Roboto', sans-serif;

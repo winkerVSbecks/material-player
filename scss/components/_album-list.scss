@@ -1,0 +1,47 @@
+
+/* Album List
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.album-list {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  // @include justify-content(space-between);
+  padding: 0.5vw;
+
+  @media (min-width: $sm) {
+    padding: 0.25vw;
+  }
+
+  @media (min-width: $md) {
+    padding: 0.25vw;
+  }
+}
+
+.album-item {
+  @include backface-visibility(hidden);
+  @include transform-style(preserve-3d);
+
+  cursor: pointer;
+  float: left;
+  height: 50vw - 0.5vw;
+  padding: 0.5vw;
+  position: relative;
+  width: 50vw - 0.5vw;
+  z-index: $z-index-album;
+
+  @media (min-width: $sm) {
+    height: (100vw/3) - 0.25vw;
+    padding: 0.25vw;
+    width: (100vw/3) - 0.25vw;
+  }
+
+  @media (min-width: $md) {
+    height: 24.875vw;
+    padding: 0.25vw;
+    width: 24.875vw;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}

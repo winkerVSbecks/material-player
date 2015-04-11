@@ -3,12 +3,14 @@
 </header>
 
 <!-- Album Cover List -->
-<a ng-animate-ref="album.id"
-   ng-href="{{ home.getDestination(album.id) }}"
-   class="album-cover"
-   ng-repeat="album in home.albums"
-   ng-class="{ end: home.isEnd($index) }">
+<main class="album-list">
+  <a class="album-item"
+     ng-animate-ref="album.id"
+     ng-href="{{ home.getDestination(album.id) }}"
+     ng-repeat="album in home.albums"
+     ng-class="{ end: home.isEnd($index) }">
 
-  <img ng-src="{{album.coverImg}}"/>
+    <img ng-src="{{album.coverImg}}"/>
 
-</a>
+  </a>
+</main>
