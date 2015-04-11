@@ -11,25 +11,25 @@ angular.module('materialApp', [
   'materialApp.controllers',
 ])
 .config([
-    '$routeProvider',
-  function($routeProvider) {
-    $routeProvider
-      .when('/albums', {
-        templateUrl: 'app/home/home.html',
-        controller: 'HomeCtrl',
-        controllerAs: 'home'
-      })
-      .when('/albums/:name', {
-        templateUrl: 'app/album/album.html',
-        controller: 'AlbumCtrl',
-        controllerAs: 'player'
-      })
-      .otherwise({
-        redirectTo: '/albums'
-      });
+  '$routeProvider',
+function($routeProvider) {
+  $routeProvider
+    .when('/albums', {
+      templateUrl: 'app/home/home.html',
+      controller: 'HomeCtrl',
+      controllerAs: 'home'
+    })
+    .when('/albums/:name', {
+      templateUrl: 'app/album/album.html',
+      controller: 'AlbumCtrl',
+      controllerAs: 'player'
+    })
+    .otherwise({
+      redirectTo: '/albums'
+    });
 }])
 .config([
-    '$anchorScrollProvider',
-  function($anchorScrollProvider) {
-    $anchorScrollProvider.disableAutoScrolling();
+  '$anchorScrollProvider',
+function($anchorScrollProvider) {
+  $anchorScrollProvider.disableAutoScrolling();
 }]);

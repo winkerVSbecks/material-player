@@ -5,12 +5,12 @@
 <!-- Album Cover List -->
 <main class="album-list">
   <a class="album-item"
-     ng-animate-ref="album.id"
      ng-href="{{ home.getDestination(album.id) }}"
-     ng-repeat="album in home.albums"
-     ng-class="{ end: home.isEnd($index) }">
+     ng-repeat="album in home.albums">
 
-    <img ng-src="{{album.coverImg}}"/>
+    <img class="transfer-profile"
+         ng-src="{{album.coverImg}}"
+         ng-animate-ref="{{ album.id }}">
 
   </a>
 </main>

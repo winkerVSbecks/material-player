@@ -6,11 +6,12 @@
      ng-class="player.uiState"
      ng-style="player.uiStyle">
 
-  <a class="album-card__figure"
-     ng-animate-ref="player.album.id"
+  <a class="album-card__figure transfer-profile"
      href="#/albums">
 
-    <img ng-src="{{ player.album.coverImg }}"/>
+    <img class="transfer-profile"
+         ng-src="{{ player.album.coverImg }}"
+         ng-animate-ref="{{ player.album.id }}">
 
   </a>
 

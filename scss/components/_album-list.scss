@@ -4,7 +4,6 @@
 .album-list {
   @include display(flex);
   @include flex-wrap(wrap);
-  // @include justify-content(space-between);
   padding: 0.5vw;
 
   @media (min-width: $sm) {
