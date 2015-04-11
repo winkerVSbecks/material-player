@@ -1,0 +1,13 @@
+{
+  "name": "angular-material-animations",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "ignore": [],
+  "dependencies": {
+    "angular": "~1.4",
+    "angular-animate": "~1.4",
+    "angular-route": "~1.4",
+    "ramda": "~0.13.0"
+  }
+}

@@ -1,0 +1,66 @@
+
+/* Base
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+%optimize {
+  @include transform(translateZ(0));
+  @include backface-visibility(hidden);
+  @include transform-style(preserve-3d);
+}
+
+html,
+body {
+  background-color: #000;
+  color: #444;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+
+/* Header */
+header {
+  background-color: $black;
+  overflow: hidden;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
+
+  h1 {
+    color: #fff;
+    display: block;
+    font-size: 1.25em;
+    font-weight: 300;
+    height: 80px;
+    line-height: 80px;
+    text-align: left;
+  }
+}
+
+
+/* Ripple */
+svg {
+  @extend %optimize;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &.full {
+    display: inherit;
+  }
+}
+
+circle {
+  @extend %optimize;
+  @include transition(all $timing-function  600ms);
+}

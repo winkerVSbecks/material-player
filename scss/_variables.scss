@@ -1,0 +1,20 @@
+/* Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$black                       : #222;
+$yellow                      : #f5bc0b;
+$white                       : #fbfcfa;
+$pink                        : #f31f69;
+$grey                        : #808280;
+
+$album-width                 : 80%;
+$player-height               : 64px;
+
+$timing-function             : cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+$z-index-album               : 998;
+$z-index-svg                 : 999;
+$z-index-album-clone         : 1000;
+$z-index-player              : 1001;
+
+$body-font                   : 'Roboto', sans-serif;
+$header-font                 : 'Roboto', sans-serif;

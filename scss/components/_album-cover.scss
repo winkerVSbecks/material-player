@@ -1,0 +1,29 @@
+
+/* Album Covers
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.album-cover {
+  @include transform-origin(left top);
+  @include transition(all $timing-function 900ms);
+  @include transition-delay(0s, 0s, 0s);
+  @include backface-visibility(hidden);
+  @include transform-style(preserve-3d);
+
+  cursor: pointer;
+  float: left;
+  height: 25vw;
+  overflow: hidden;
+  padding-left: 4px;
+  padding-top: 4px;
+  position: relative;
+  width: 25vw;
+  z-index: $z-index-album;
+
+  &.end {
+    padding-right: 4px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
