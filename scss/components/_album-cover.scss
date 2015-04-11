@@ -18,6 +18,10 @@
   width: 25vw;
   z-index: $z-index-album;
 
+  &--full {
+    padding: 0;
+  }
+
   &.end {
     padding-right: 4px;
   }

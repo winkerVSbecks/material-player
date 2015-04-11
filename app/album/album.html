@@ -1,17 +1,26 @@
-<animated-page color="player.album.color"
-               artist="player.album.artistImg"></animated-page>
+<!-- <animated-page color="player.album.color"
+               artist="player.album.artistImg">
+</animated-page> -->
 
-<div class="ui" ng-class="player.uiState" ng-style="player.uiStyle">
+<div class="album-card"
+     ng-class="player.uiState"
+     ng-style="player.uiStyle">
 
-  <a persist="player.album.id"
-     href="#/albums"
-     style="padding: 0;"
-     class="album-cover">
+  <a class="album-card__figure"
+     ng-animate-ref="player.album.id"
+     href="#/albums">
 
-        <img ng-src="{{player.album.coverImg}}"/>
+    <img ng-src="{{ player.album.coverImg }}"/>
 
   </a>
 
-  <h1>{{player.album.name}}</h1>
-  <p>{{player.album.artist}}</p>
+  <div class="album-card__body">
+    <h1 class="album-card__title">
+      {{ player.album.name }}
+    </h1>
+
+    <p class="album-card__artist">
+      {{ player.album.artist }}
+    </p>
+  </div>
 </div>

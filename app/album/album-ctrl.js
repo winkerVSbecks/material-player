@@ -1,11 +1,10 @@
 angular.module('materialApp.controllers')
   .controller('AlbumCtrl', [
     'albums',
-    'animationDelegate',
     '$routeParams',
     '$timeout',
     '$rootScope',
-  function(albums, animationDelegate, $routeParams, $timeout, $rootScope) {
+  function(albums, $routeParams, $timeout, $rootScope) {
 
     var vm = this;
 
@@ -19,14 +18,11 @@ angular.module('materialApp.controllers')
       backgroundSize: 'cover'
     };
 
-    $timeout(function() {
-      vm.uiState = 'expand';
-      vm.uiStyle = {
-        backgroundColor: vm.album.color,
-        color: vm.album.textColor
-      };
-    }, 300);
-
+    vm.uiState = 'album-card--expand';
+    vm.uiStyle = {
+      backgroundColor: vm.album.color,
+      color: vm.album.textColor
+    };
 
     $timeout(function() {
       $rootScope.transition = 'reverse';

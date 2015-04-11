@@ -7,6 +7,7 @@ var sass = require('gulp-ruby-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var scsslint = require('gulp-scss-lint');
+var bourbon = require('node-bourbon');
 
 gulp.task('scss-lint', function () {
   return gulp.src('./scss/**/*.scss')
@@ -15,10 +16,11 @@ gulp.task('scss-lint', function () {
           }));
 });
 
+console.log(bourbon.includePaths);
 
 gulp.task('sass', ['scss-lint'], function() {
   return sass('./scss/app.scss', {
-      sourcemap: true,
+      sourcemap: false
     })
     .pipe(gulp.dest('./css'))
     .pipe(minifyCss())

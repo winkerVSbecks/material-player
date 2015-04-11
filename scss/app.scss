@@ -2,7 +2,7 @@
 /* Material Music Player
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 // Bourbon for mixins
-@import '../node_modules/node-bourbon/assets/stylesheets/bourbon';
+@import '../node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/bourbon';
 // normalize.css v3.0.2
 @import '../bower_components/skeletor/scss/normalize';
 
@@ -20,4 +20,4 @@
 @import 'animations';
 @import 'components/player';
 @import 'components/album-cover';
-@import 'components/ui-card';
+@import 'components/album-card';

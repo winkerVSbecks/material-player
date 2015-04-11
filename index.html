@@ -16,16 +16,16 @@
 
 <body ng-app="materialApp">
 
-  <ng-view class="animate-view {{transition}}"></ng-view>
+  <ng-view class="animate-view {{ transition }}"></ng-view>
 
   <!-- Player -->
   <div class="player">
-    <a class="album-art" href="">
+    <a class="player__figure" href="">
       <img src="/img/tycho.jpg" />
     </a>
-    <div class="body">
-      <h4>Awake</h4>
-      <p>Tycho</p>
+    <div class="player__body">
+      <h4 class="player__title">Awake</h4>
+      <p class="player__artist">Tycho</p>
     </div>
   </div>
 
