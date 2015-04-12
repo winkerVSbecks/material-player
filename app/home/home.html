@@ -8,8 +8,7 @@
      ng-href="{{ home.getDestination(album.id) }}"
      ng-repeat="album in home.albums">
 
-    <img class="transfer-profile"
-         ng-src="{{album.coverImg}}"
+    <img ng-src="{{album.coverImg}}"
          ng-animate-ref="{{ album.id }}">
 
   </a>

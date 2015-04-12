@@ -34,9 +34,8 @@
 // }
 
 
-.animate-view.ng-leave,
-.animate-view.ng-enter,
-.animate-view-anchor.in,
-.animate-view-anchor.out {
+// .animate-view.ng-leave,
+// .animate-view.ng-enter,
+.animate-view-anchor.in {
   @include transition(all $timing-function 800ms);
 }
